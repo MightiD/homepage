@@ -1049,5 +1049,9 @@
         "movies": "Movies",
         "episodes": "Episodes",
         "other": "Other"
+    },
+    "wgdashboard": {
+        "receive": "Receive",
+        "sent": "Send"
     }
 }

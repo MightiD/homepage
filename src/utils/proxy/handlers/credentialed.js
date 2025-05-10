@@ -106,6 +106,9 @@ export default async function credentialedProxyHandler(req, res, map) {
           // v1 does not require a key
           headers.Authorization = `Bearer ${widget.key}`;
         }
+      } else if (widget.type === "wgdashboard") {
+        headers["wg-dashboard-apikey"] = widget.key;
+
       } else {
         headers["X-API-Key"] = `${widget.key}`;
       }
